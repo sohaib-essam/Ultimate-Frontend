@@ -10,5 +10,8 @@
     transition: .3s;
     float: right;
     will-change: width;
+    &.no-sidebar {
+      width: 100%;
+    }
   }
 }
