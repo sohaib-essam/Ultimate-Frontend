@@ -16,5 +16,42 @@ $(function() {
     .next('.child-links')
     .slideToggle();
 })
-})
 
+// open / Close FullScreen 
+$(".toggle-fullscreen").on("click", function () {
+  $(this).toggleClass("full-screen");
+  if ($(this).hasClass("full-screen")) { //page is now full screen
+    openFullscreen();
+  } else { //Page Is Not Full Screen
+    closeFullscreen();
+  }
+});
+
+});
+
+
+
+
+var elem = document.documentElement;
+
+  /* View in fullscreen */
+  function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) {
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+      elem.msRequestFullscreen();
+    }
+  }
+
+  /* Close fullscreen */
+  function closeFullscreen() {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) {
+      document.msExitFullscreen();
+    }
+  }
