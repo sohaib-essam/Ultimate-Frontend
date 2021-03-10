@@ -25,3 +25,32 @@
             | You Got Money From Bla Bla Bla
       .noti-foot.text-center: a(href="#") View All Notifications
   i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
+  .dropdown.usermenu-container
+    .user-data#usermenu(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+      img.avatar.rounded-circle(src="images/avatar.jpg" alt="")
+      span.username Sohaib Essam
+      i.fa.fa-angle-down.fa-lg
+    .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+      .user-info
+        h3 Sohaib Essam
+        p Premium Member
+      hr
+      ul.list-unstyled.activites-list
+        li Added Comment On Post "How To Make Bla Bla Bla"
+        li Created Post On Category "Science"
+        li Created Charton Charts Page
+        li Added Comment On Post "How To Make Bla Bla Bla Two"
+      hr
+      .row.usermenu-links
+        .col
+          .link-box
+            i.fa.fa-gear.fa-lg.fa-fw
+            span Settings
+        .col
+          .link-box
+            i.fa.fa-user.fa-lg.fa-fw
+            span My Profile
+        .col
+          .link-box
+            i.fa.fa-power-off.fa-lg.fa-fw
+            span Logout
