@@ -4,6 +4,18 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  &.open {
+    font-family: 'Open Sans', sans-serif;
+  }
+  &.public {
+    font-family: 'Public Sans', sans-serif;
+  }
+  &.roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+  &.source {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
 }
 
 .page {
@@ -25,9 +37,6 @@ body {
     .page-title {
       font-weight: bold;
       color: #27ae60;
-    }
-    p.page-desc {
-
     }
   }
 }
